@@ -112,7 +112,7 @@ namespace MQTTclient
             .WithQualityOfServiceLevel((MQTTnet.Protocol.MqttQualityOfServiceLevel)qos)
             .Build());
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void buttonOpen_Click(object sender, EventArgs e)
         {
             try
             {
@@ -124,7 +124,7 @@ namespace MQTTclient
             }            
         }
 
-        private async void button2_Click(object sender, EventArgs e)
+        private async void buttonPublish_Click(object sender, EventArgs e)
         {
             try
             {
@@ -137,28 +137,33 @@ namespace MQTTclient
             }
         }
      
-        private async void button3_Click(object sender, EventArgs e)
+        private async void buttonSubscribe_Click(object sender, EventArgs e)
         {
             string topic = textBoxTopic.Text;
             listBox1.Items.Add(topic);
             await SubscribeAsync(topic);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             client.StopAsync();            
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonClear_Click(object sender, EventArgs e)
         {
             labelMessages.Text = "";
         }
 
-        private async void button6_Click(object sender, EventArgs e)
+        private async void buttonUnsubscribe_Click(object sender, EventArgs e)
         {
             string topic = textBoxTopic.Text;
             listBox1.Items.Remove(topic);
             await client.UnsubscribeAsync(topic);
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            textBoxTopic.Text = listBox1.SelectedItem.ToString();
         }
     }
 }

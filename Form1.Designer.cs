@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonOpen = new System.Windows.Forms.Button();
+            this.buttonPublish = new System.Windows.Forms.Button();
+            this.buttonSubscribe = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.labelMessages = new System.Windows.Forms.Label();
             this.textBoxUrl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,13 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonUnsubscribe = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -67,45 +67,45 @@
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonOpen
             // 
-            this.button1.Location = new System.Drawing.Point(277, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 25);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Open connection";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonOpen.Location = new System.Drawing.Point(277, 15);
+            this.buttonOpen.Name = "buttonOpen";
+            this.buttonOpen.Size = new System.Drawing.Size(106, 25);
+            this.buttonOpen.TabIndex = 0;
+            this.buttonOpen.Text = "Open connection";
+            this.buttonOpen.UseVisualStyleBackColor = true;
+            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
-            // button2
+            // buttonPublish
             // 
-            this.button2.Location = new System.Drawing.Point(3, 71);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 28);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Publish";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonPublish.Location = new System.Drawing.Point(3, 71);
+            this.buttonPublish.Name = "buttonPublish";
+            this.buttonPublish.Size = new System.Drawing.Size(104, 28);
+            this.buttonPublish.TabIndex = 1;
+            this.buttonPublish.Text = "Publish";
+            this.buttonPublish.UseVisualStyleBackColor = true;
+            this.buttonPublish.Click += new System.EventHandler(this.buttonPublish_Click);
             // 
-            // button3
+            // buttonSubscribe
             // 
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 28);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Subscribe";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonSubscribe.Location = new System.Drawing.Point(3, 3);
+            this.buttonSubscribe.Name = "buttonSubscribe";
+            this.buttonSubscribe.Size = new System.Drawing.Size(104, 28);
+            this.buttonSubscribe.TabIndex = 2;
+            this.buttonSubscribe.Text = "Subscribe";
+            this.buttonSubscribe.UseVisualStyleBackColor = true;
+            this.buttonSubscribe.Click += new System.EventHandler(this.buttonSubscribe_Click);
             // 
-            // button4
+            // buttonClose
             // 
-            this.button4.Location = new System.Drawing.Point(389, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 25);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Close connection";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonClose.Location = new System.Drawing.Point(389, 15);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(106, 25);
+            this.buttonClose.TabIndex = 3;
+            this.buttonClose.Text = "Close connection";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // labelMessages
             // 
@@ -164,26 +164,26 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.buttonClear);
             this.panel2.Controls.Add(this.textBoxUrl);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.buttonOpen);
+            this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(607, 53);
             this.panel2.TabIndex = 12;
             // 
-            // button5
+            // buttonClear
             // 
-            this.button5.Location = new System.Drawing.Point(501, 15);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 25);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Clear Messages";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonClear.Location = new System.Drawing.Point(501, 15);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(93, 25);
+            this.buttonClear.TabIndex = 7;
+            this.buttonClear.Text = "Clear Messages";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // splitContainer1
             // 
@@ -245,24 +245,24 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.buttonSubscribe);
+            this.flowLayoutPanel1.Controls.Add(this.buttonUnsubscribe);
+            this.flowLayoutPanel1.Controls.Add(this.buttonPublish);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 36);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(140, 129);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
-            // button6
+            // buttonUnsubscribe
             // 
-            this.button6.Location = new System.Drawing.Point(3, 37);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 28);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Unsubscribe";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.buttonUnsubscribe.Location = new System.Drawing.Point(3, 37);
+            this.buttonUnsubscribe.Name = "buttonUnsubscribe";
+            this.buttonUnsubscribe.Size = new System.Drawing.Size(104, 28);
+            this.buttonUnsubscribe.TabIndex = 10;
+            this.buttonUnsubscribe.Text = "Unsubscribe";
+            this.buttonUnsubscribe.UseVisualStyleBackColor = true;
+            this.buttonUnsubscribe.Click += new System.EventHandler(this.buttonUnsubscribe_Click);
             // 
             // panel5
             // 
@@ -281,6 +281,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(130, 143);
             this.listBox1.TabIndex = 0;
+            this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // panel4
             // 
@@ -347,10 +348,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonOpen;
+        private System.Windows.Forms.Button buttonPublish;
+        private System.Windows.Forms.Button buttonSubscribe;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Label labelMessages;
         private System.Windows.Forms.TextBox textBoxUrl;
         private System.Windows.Forms.Label label2;
@@ -361,8 +362,8 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonClear;
+        private System.Windows.Forms.Button buttonUnsubscribe;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
